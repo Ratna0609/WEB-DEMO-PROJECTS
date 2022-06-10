@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>java-experts-application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+     </welcome-file-list>
+  <servlet>
+    <servlet-name>logServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>regServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>regServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>delServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>forgetServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.ForgetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>forgetServlet</servlet-name>
+    <url-pattern>/forgotpassword</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>resetServlet</servlet-name>
+    <servlet-class>com.javaexperts.application.controller.ResetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>resetServlet</servlet-name>
+    <url-pattern>/resetpassword</url-pattern>
+  </servlet-mapping>
+</web-app>
